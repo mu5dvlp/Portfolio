@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>About</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="ここにサイト説明を入れます">
+	<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/openclose.js"></script>
+	<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+	<!--小さな端末用（480px以下端末）ブロック-->
+	<div id="sh">
+
+		<!--小さな端末用ロゴ-->
+		<p id="logo"><a href="topPage.html"><img src="images/originalLogo_s.png" alt="SAMPLE LOGO"></a></p>
+
+		<!--小さな端末用メニュー-->
+		<nav id="menubar-s">
+			<ul>
+				<li><a href="topPage.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="gallery.html"> GALLERY </a></li>
+				<li><a href="myContact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+
+	</div>
+	<!--/sh-->
+
+	<div id="container">
+
+		<div id="main">
+
+			<section class="box">
+
+				<h2>自己紹介</h2>
+
+				<table class="ta1">
+					<tr>
+						<th>名前</th>
+						<td>松本勇吾</td>
+					</tr>
+					<tr>
+						<th>学歴</th>
+						<td>明治大学 総合数理学部 先端メディアサイエンス学科</td>
+					</tr>
+					<tr>
+						<th>主な開発言語</th>
+						<td>HTML, CSS, PHP, JavaScript, C#, Processing, MATLAB, Arduino</td>
+					</tr>
+					<tr>
+						<th>好きなこと</th>
+						<td>何か物を作ること(工作, 電子工作, ゲーム開発, モデリング, 裁縫, シナリオ, イラスト, 作曲など)、ゲーム、漫画、アニメ、ライトノベル</td>
+					</tr>
+				</table>
+
+			</section>
+
+			<!--
+			<section class="box">
+
+				<h3>トップページのスライドショーについて</h3>
+				<p>css3を使ったスライドショーになっています。古いブラウザ（主にIE8以下）だと最後の１枚だけが固定表示されるので考慮して準備して下さい。<br>
+					設定は全てcssフォルダのslide.cssで行っています。説明もありますので変更したい人は調整してみて下さい。<br>
+					<a href="http://template-party.com/tips/tips20160408_css_slide.html">css3スライドショーについての詳しい解説はこちら。</a>
+				</p>
+
+				<h3>プレビューでチェックすると警告メッセージが出る場合(一部ブラウザ対象)</h3>
+				<p>主にjavascript（jsファイル）ファイルによって出る警告ですが、WEB上では出ません。また、この警告が出ている間は効果を見る事ができないので、警告メッセージ内でクリックして解除してあげて下さい。これにより効果がちゃんと見れるようになります。
+				</p>
+
+			</section>
+			-->
+			<!--/box-->
+
+		</div>
+		<!--/main-->
+
+		<div id="sub">
+
+			<!--大きな端末用（481px以上端末）ロゴ-->
+			<p id="logo"><a href="topPage.html"><img src="images/originalLogo.png" alt="SAMPLE LOGO"></a></p>
+
+			<!--大きな端末用（481px以上端末）メニュー-->
+			<nav id="menubar">
+				<ul>
+					<li><a href="topPage.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="myContact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		<!--/sub-->
+
+	</div>
+	<!--/container-->
+
+	<footer>
+		<small>Copyright&copy; <a href="topPage.html">Sample Site</a> All Rights Reserved.</small>
+		<span class="pr"><a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a></span>
+	</footer>
+
+	<!--メニューの３本バー-->
+	<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+	<!--メニューの開閉処理条件設定　480px以下-->
+	<script type="text/javascript">
+		if (OCwindowWidth() <= 480) {
+			open_close("menubar_hdr", "menubar-s");
+		}
+	</script>
+</body>
+
+</html>
